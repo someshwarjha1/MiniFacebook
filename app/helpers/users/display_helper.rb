@@ -1,0 +1,2 @@
+module Users::DisplayHelper
+end

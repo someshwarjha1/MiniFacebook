@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <div class="row">
+    <% @posts.each do |post| %>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+            <a href="<%= post_path(post) %>">
+                <%= image_tag post.image%>
+            </a>
+          <div class="card-body">
+            <p class="card-text"><%= post.caption %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+

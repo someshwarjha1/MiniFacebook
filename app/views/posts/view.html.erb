@@ -1,0 +1,24 @@
+<div class="container">
+  <% @posts.each do |post| %>
+    <div class="row justify-content-md-center">
+      <div class="col-8 mt-4">
+        <div class="card text-center shadow mb-5 bg-white rounded">
+          
+          <div class="card-body">
+            
+            <p class="card-text">
+            <% if post.image.attached? %>
+                <a href="<%= post_path(post) %>">
+                    <%= image_tag post.image %>
+                </a>
+            <% end %></p>
+           
+          </div>
+          <div class="card-footer text-muted">
+            <%= post.caption %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
