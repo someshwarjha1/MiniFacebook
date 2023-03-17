@@ -12,6 +12,9 @@
 
           <div class="card-body">
               <%= link_to "Un friend", friendship_path(user.id), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+
+              <%= link_to "Chat", message_path(user.id), class: "btn btn-outline-success" %>
+              
             
           </div>
           

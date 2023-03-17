@@ -18,6 +18,8 @@ gem "mini_magick"
 gem 'image_processing', '~> 1.12', '>= 1.12.2'
 
 
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker

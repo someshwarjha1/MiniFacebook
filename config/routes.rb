@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :messages
+  # get 'chat', to: 'messages#show'
   devise_scope :user do
     get "/signup", to: 'users/registrations#new'
     get "/login", to: 'users/sessions#new'
